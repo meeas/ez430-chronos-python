@@ -1,0 +1,9 @@
+Snippet from forum to have more than one watch talk to a single accesspoint:
+
+    yes, actually i found an easy solution
+    in main_ed_bm.c file in chronos sports watch software,
+    simpliciti_data[0]=0x01; // for chronos 1
+    same thing for chronos2 as
+    simpliciti_data[0]=0x02;
+    and so on for the rest of two.
+    then I simply change the code for the access point in order to support more than 1 end device, you may check a nice example from rf2500 kit's software.
